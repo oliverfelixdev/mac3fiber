@@ -1,0 +1,39 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#root{
+    height: 100%;
+    width: 100%;
+    background-color: #1d1d1d;
+}
+
+@font-face {
+    font-family: fed;
+    src: url('./sf-pro-text_regular.woff2');
+}
+
+.glowing-text {
+    font-size: 5rem;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+                 0 0 10px rgba(255, 255, 255, 0.5),
+                 0 0 20px rgba(255, 255, 255, 0.5),
+                 0 0 40px #dadada,
+                 0 0 80px #dadada,
+                 0 0 120px #dadada,
+                 0 0 160px #dadada;
+    animation: glowing 2s infinite alternate;
+  }
+  
+  @keyframes glowing {
+    from {
+      text-shadow: 0 0 10px #dadada, 0 0 20px #dadada, 0 0 30px #dadada;
+    }
+    to {
+      text-shadow: 0 0 20px #dadada, 0 0 30px #dadada, 0 0 50px #dadada;
+    }
+  }
+  
